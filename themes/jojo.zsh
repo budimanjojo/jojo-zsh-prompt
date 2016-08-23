@@ -35,7 +35,7 @@ function right_date() {
 
 function right_return_code() {
   if [[ ${_enable_right_return_status} == "yes" ]]; then
-    echo "${_return_status_color} %?↵"
+    echo "${_return_status_color} %?↵ "
   fi
 }
 
