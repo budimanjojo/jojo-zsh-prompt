@@ -60,14 +60,14 @@ function show_git_commits() {
   local commits_behind="$(git log --oneline ..$upstream 2> /dev/null | wc -l | tr -d ' ')"
   local prompt=""
   if [[ $commits_behind -gt 0 ]]; then
-    prompt+="${_commits_behind_symbol}${commits_behind}"
+    prompt+="${_commits_behind_symbol} ${commits_behind}"
   else
-    prompt+="${_commits_behind_symbol} _ "
+    prompt+="${_commits_behind_symbol}0 "
   fi
   if [[ $commits_ahead -gt 0 ]]; then
-    prompt+="${_commits_ahead_symbol}${commits_ahead}"
+    prompt+="${commits_ahead} ${_commits_ahead_symbol}"
   else
-    prompt+="_ ${_commits_ahead_symbol}"
+    prompt+="0 ${_commits_ahead_symbol}"
   fi
   prompt+=%{$reset_color%}
   echo -n $prompt
