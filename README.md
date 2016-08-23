@@ -59,6 +59,23 @@ Currently available themes (screenshots coming soon):
 - jojo
 - simpleasy
 
+## Uninstallation
+  All you need to do is to remove the line starting with:
+```
+##########################################################################
+################ This section is added by JOJO ZSH PROMPT ################
+###### Please remove all these line below if you no longer using it ######
+######## Thanks for trying me out though, really appreciate it :D ########
+##########################################################################
+```
+until:
+```
+#########################################################################
+######################### END OF JOJO ZSH PROMPT ########################
+#########################################################################
+```
+in your ~/.zshrc and just remove the folder ~/.jojo-zsh-prompt. Thanks for the support, really appreciate it. :)
+
 ## Future Plan
   There are some things that I will work add in the future, or my to do list to be exact:
 - [x] Make an install script to automatically install this for you
