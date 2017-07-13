@@ -9,4 +9,4 @@ _has_adds_symbol="%{$fg[green]%}+"
 _has_deletions_symbol="%{$fg[red]%}-"
 _has_untracked_files_symbol="%{$fg[blue]%}*"
 
-PROMPT='%{$fg[blue]%}%~%{$reset_color%} $(show_git_branch) $(show_git_dirty)$(show_git_status) '
+PROMPT='%{$fg[red]%}%~%{$reset_color%} $(show_git_branch) $(show_git_dirty)$(show_git_status) '
